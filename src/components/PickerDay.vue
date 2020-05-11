@@ -2,11 +2,11 @@
   <div :class="[calendarClass, 'vdp-datepicker__calendar']" v-show="showDayView" :style="calendarStyle" @mousedown.prevent>
     <slot name="beforeCalendarHeader"></slot>
     <header>
+      <span class="day__month_btn" @click="showMonthCalendar" :class="allowedToShowView('month') ? 'up' : ''">{{ isYmd ? currYearName : currMonthName }} {{ isYmd ? currMonthName : currYearName }}</span>
       <span
         @click="isRtl ? nextMonth() : previousMonth()"
         class="prev"
         :class="{'disabled': isLeftNavDisabled}">&lt;</span>
-      <span class="day__month_btn" @click="showMonthCalendar" :class="allowedToShowView('month') ? 'up' : ''">{{ isYmd ? currYearName : currMonthName }} {{ isYmd ? currMonthName : currYearName }}</span>
       <span
         @click="isRtl ? previousMonth() : nextMonth()"
         class="next"

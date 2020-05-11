@@ -1122,20 +1122,6 @@ var __vue_render__$1 = function() {
         _c(
           "span",
           {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextMonth() : _vm.previousMonth();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
             staticClass: "day__month_btn",
             class: _vm.allowedToShowView("month") ? "up" : "",
             on: { click: _vm.showMonthCalendar }
@@ -1147,6 +1133,20 @@ var __vue_render__$1 = function() {
                 _vm._s(_vm.isYmd ? _vm.currMonthName : _vm.currYearName)
             )
           ]
+        ),
+        _vm._v(" "),
+        _c(
+          "span",
+          {
+            staticClass: "prev",
+            class: { disabled: _vm.isLeftNavDisabled },
+            on: {
+              click: function($event) {
+                _vm.isRtl ? _vm.nextMonth() : _vm.previousMonth();
+              }
+            }
+          },
+          [_vm._v("<")]
         ),
         _vm._v(" "),
         _c(
@@ -1447,16 +1447,6 @@ var __vue_render__$2 = function() {
         _c(
           "span",
           {
-            staticClass: "month__year_btn",
-            class: _vm.allowedToShowView("year") ? "up" : "",
-            on: { click: _vm.showYearCalendar }
-          },
-          [_vm._v(_vm._s(_vm.pageYearName))]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
             staticClass: "prev",
             class: { disabled: _vm.isLeftNavDisabled },
             on: {
@@ -1466,6 +1456,16 @@ var __vue_render__$2 = function() {
             }
           },
           [_vm._v("<")]
+        ),
+        _vm._v(" "),
+        _c(
+          "span",
+          {
+            staticClass: "month__year_btn",
+            class: _vm.allowedToShowView("year") ? "up" : "",
+            on: { click: _vm.showYearCalendar }
+          },
+          [_vm._v(_vm._s(_vm.pageYearName))]
         ),
         _vm._v(" "),
         _c(
