@@ -1,7 +1,7 @@
 {
-  "name": "vuejs-datepicker",
+  "name": "blueshoe-vuejs-datepicker",
   "version": "1.6.2",
-  "description": "A simple Vue.js datepicker component. Supports disabling of dates, inline mode, translations",
+  "description": "Forked from vuejs-datepicker.A simple Vue.js datepicker component. Supports disabling of dates, inline mode, translations",
   "keywords": [
     "vue",
     "datepicker",
@@ -15,13 +15,13 @@
     "src",
     "dist"
   ],
-  "author": "Charlie Kassel <ck@charliekassel.com>",
+  "author": "Tobias Frölich <froelichtobias@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/charliekassel/vuejs-datepicker"
+    "url": "https://github.com/Tobsl3r/vuejs-datepicker"
   },
   "bugs": {
-    "url": "https://github.com/charliekassel/vuejs-datepicker/issues"
+    "url": "https://github.com/Tobsl3r/vuejs-datepicker/issues"
   },
   "private": false,
   "license": "MIT",
